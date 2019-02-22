@@ -1,0 +1,10 @@
+<html>
+<h1> <%= com %> </h1>
+<ul>
+  <% computers.forEach(function(computer){ %>
+   <li><%= computer.title %>
+    <img src ="<%= computer.images %>" style="width: 100px ; height: auto" > 
+</li>
+   <% }); %>
+</ul>
+</html>

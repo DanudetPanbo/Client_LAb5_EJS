@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("img").hide("slow");
+  });
+  $("#show").click(function(){
+    $("img").show("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ <div id="flip">Click Here</div>
+ <div id="panel">
+    <img src="https://scontent.fbkk9-2.fna.fbcdn.net/v/t1.0-9/41842808_2188548451217550_8119243198976491520_n.jpg?_nc_cat=109&_nc_pt=1&_nc_ht=scontent.fbkk9-2.fna&oh=c33c36b4d2977fb1e64420cfefa8fcaf&oe=5CEFA5A1" alt="Trulli" width="250" height="250"> 
+    <br>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <br>
+<b>Name:</b> Danudet Panbo <br>
+     <b>Nickname:</b> Dump <br>
+     <b>Birthdate:</b> 28/01/1997 <br>
+     <b>Age:</b> 22 <br>
+     <b>Job:</b> Student <br>
+     
+ 
+     </div>
+
+                
+</body>
+</html>
